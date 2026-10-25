@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+workspace/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.openai/
+node_modules/
