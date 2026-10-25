@@ -1,0 +1,171 @@
+[
+  {
+    "id": "O-01",
+    "type": "RegulatoryObligation",
+    "source": "DORA-OJ-2022",
+    "locator": "Article 28(4)(a) + introductory sentence",
+    "text": "assess whether the contractual arrangement covers the use of ICT services supporting a critical or important function;",
+    "plain_english": "Before contracting for ICT services, assess whether they support a critical or important function.",
+    "bank_interpretation": "SYNTHETIC DRAFT: the service owner records classification and obtains a pre-signature check. These roles and approvals are bank design choices, not quoted regulatory requirements.",
+    "review": "unreviewed",
+    "elements": [
+      "classification",
+      "before_contract"
+    ],
+    "applicability": "Hypothetical EU financial entity within DORA scope; SME confirmation pending."
+  },
+  {
+    "id": "A-PolicyRequirement",
+    "type": "PolicyRequirement",
+    "source": "A-BANK-v1",
+    "locator": "PolicyRequirement §1",
+    "text": "Before signing any ICT service contract, classify whether the service supports a critical or important function.",
+    "elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicts": [],
+    "synthetic": true,
+    "review": "unreviewed"
+  },
+  {
+    "id": "A-ProcedureStep",
+    "type": "ProcedureStep",
+    "source": "A-BANK-v1",
+    "locator": "ProcedureStep §1",
+    "text": "The service owner completes the critical-or-important-function classification and submits it before contract signature.",
+    "elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicts": [],
+    "synthetic": true,
+    "review": "unreviewed"
+  },
+  {
+    "id": "A-Control",
+    "type": "Control",
+    "source": "A-BANK-v1",
+    "locator": "Control §1",
+    "text": "Before signature, the approver checks that the critical-or-important-function classification is completed; missing classification blocks signature.",
+    "elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicts": [],
+    "synthetic": true,
+    "review": "unreviewed"
+  },
+  {
+    "id": "B-PolicyRequirement",
+    "type": "PolicyRequirement",
+    "source": "B-BANK-v1",
+    "locator": "PolicyRequirement §1",
+    "text": "Before signing any ICT service contract, classify whether the service supports a critical or important function.",
+    "elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicts": [],
+    "synthetic": true,
+    "review": "unreviewed"
+  },
+  {
+    "id": "B-ProcedureStep",
+    "type": "ProcedureStep",
+    "source": "B-BANK-v1",
+    "locator": "ProcedureStep §1",
+    "text": "The service owner completes the critical-or-important-function classification and submits it before contract signature.",
+    "elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicts": [],
+    "synthetic": true,
+    "review": "unreviewed"
+  },
+  {
+    "id": "B-Control",
+    "type": "Control",
+    "source": "B-BANK-v1",
+    "locator": "Control §1",
+    "text": "The reviewer checks that a critical-or-important-function classification is present.",
+    "elements": [
+      "classification"
+    ],
+    "conflicts": [],
+    "synthetic": true,
+    "review": "unreviewed"
+  },
+  {
+    "id": "C-PolicyRequirement",
+    "type": "PolicyRequirement",
+    "source": "C-BANK-v1",
+    "locator": "PolicyRequirement §1",
+    "text": "Before signing any ICT service contract, classify whether the service supports a critical or important function.",
+    "elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicts": [],
+    "synthetic": true,
+    "review": "unreviewed"
+  },
+  {
+    "id": "C-ProcedureStep",
+    "type": "ProcedureStep",
+    "source": "C-BANK-v1",
+    "locator": "ProcedureStep §1",
+    "text": "The service owner completes the critical-or-important-function classification and submits it before contract signature.",
+    "elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicts": [],
+    "synthetic": true,
+    "review": "unreviewed"
+  },
+  {
+    "id": "D-PolicyRequirement",
+    "type": "PolicyRequirement",
+    "source": "D-BANK-v1",
+    "locator": "PolicyRequirement §1",
+    "text": "Before signing any ICT service contract, classify whether the service supports a critical or important function.",
+    "elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicts": [],
+    "synthetic": true,
+    "review": "unreviewed"
+  },
+  {
+    "id": "D-ProcedureStep",
+    "type": "ProcedureStep",
+    "source": "D-BANK-v1",
+    "locator": "ProcedureStep §1",
+    "text": "The service owner completes the critical-or-important-function classification and submits it before contract signature.",
+    "elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicts": [],
+    "synthetic": true,
+    "review": "unreviewed"
+  },
+  {
+    "id": "D-Control",
+    "type": "Control",
+    "source": "D-BANK-v1",
+    "locator": "Control §1",
+    "text": "The classification check is performed only after contract signature; there is no pre-signature check.",
+    "elements": [
+      "classification"
+    ],
+    "conflicts": [
+      "before_contract"
+    ],
+    "synthetic": true,
+    "review": "unreviewed"
+  }
+]

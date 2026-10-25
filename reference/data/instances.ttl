@@ -1,0 +1,300 @@
+@prefix e: <https://example.org/tpr/data/> .
+@prefix f: <https://example.org/tpr/foundation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+e:A-M1 a f:MappingAssertion ;
+    f:evidence e:A-PolicyRequirement-passage,
+        e:O-01-passage ;
+    f:from e:O-01 ;
+    f:rationale "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity." ;
+    f:relationship "addressedBy" ;
+    f:review "unreviewed" ;
+    f:scenario e:A ;
+    f:supportedElement "before_contract",
+        "classification" ;
+    f:to e:A-PolicyRequirement .
+
+e:A-M2 a f:MappingAssertion ;
+    f:evidence e:A-PolicyRequirement-passage,
+        e:A-ProcedureStep-passage ;
+    f:from e:A-PolicyRequirement ;
+    f:rationale "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity." ;
+    f:relationship "implementedBy" ;
+    f:review "unreviewed" ;
+    f:scenario e:A ;
+    f:supportedElement "before_contract",
+        "classification" ;
+    f:to e:A-ProcedureStep .
+
+e:A-M3 a f:MappingAssertion ;
+    f:evidence e:A-Control-passage,
+        e:A-ProcedureStep-passage ;
+    f:from e:A-ProcedureStep ;
+    f:rationale "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity." ;
+    f:relationship "supportedBy" ;
+    f:review "unreviewed" ;
+    f:scenario e:A ;
+    f:supportedElement "before_contract",
+        "classification" ;
+    f:to e:A-Control .
+
+e:B-M1 a f:MappingAssertion ;
+    f:evidence e:B-PolicyRequirement-passage,
+        e:O-01-passage ;
+    f:from e:O-01 ;
+    f:rationale "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity." ;
+    f:relationship "addressedBy" ;
+    f:review "unreviewed" ;
+    f:scenario e:B ;
+    f:supportedElement "before_contract",
+        "classification" ;
+    f:to e:B-PolicyRequirement .
+
+e:B-M2 a f:MappingAssertion ;
+    f:evidence e:B-PolicyRequirement-passage,
+        e:B-ProcedureStep-passage ;
+    f:from e:B-PolicyRequirement ;
+    f:rationale "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity." ;
+    f:relationship "implementedBy" ;
+    f:review "unreviewed" ;
+    f:scenario e:B ;
+    f:supportedElement "before_contract",
+        "classification" ;
+    f:to e:B-ProcedureStep .
+
+e:B-M3 a f:MappingAssertion ;
+    f:evidence e:B-Control-passage,
+        e:B-ProcedureStep-passage ;
+    f:from e:B-ProcedureStep ;
+    f:rationale "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity." ;
+    f:relationship "supportedBy" ;
+    f:review "unreviewed" ;
+    f:scenario e:B ;
+    f:supportedElement "classification" ;
+    f:to e:B-Control .
+
+e:C-M1 a f:MappingAssertion ;
+    f:evidence e:C-PolicyRequirement-passage,
+        e:O-01-passage ;
+    f:from e:O-01 ;
+    f:rationale "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity." ;
+    f:relationship "addressedBy" ;
+    f:review "unreviewed" ;
+    f:scenario e:C ;
+    f:supportedElement "before_contract",
+        "classification" ;
+    f:to e:C-PolicyRequirement .
+
+e:C-M2 a f:MappingAssertion ;
+    f:evidence e:C-PolicyRequirement-passage,
+        e:C-ProcedureStep-passage ;
+    f:from e:C-PolicyRequirement ;
+    f:rationale "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity." ;
+    f:relationship "implementedBy" ;
+    f:review "unreviewed" ;
+    f:scenario e:C ;
+    f:supportedElement "before_contract",
+        "classification" ;
+    f:to e:C-ProcedureStep .
+
+e:D-M1 a f:MappingAssertion ;
+    f:evidence e:D-PolicyRequirement-passage,
+        e:O-01-passage ;
+    f:from e:O-01 ;
+    f:rationale "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity." ;
+    f:relationship "addressedBy" ;
+    f:review "unreviewed" ;
+    f:scenario e:D ;
+    f:supportedElement "before_contract",
+        "classification" ;
+    f:to e:D-PolicyRequirement .
+
+e:D-M2 a f:MappingAssertion ;
+    f:evidence e:D-PolicyRequirement-passage,
+        e:D-ProcedureStep-passage ;
+    f:from e:D-PolicyRequirement ;
+    f:rationale "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity." ;
+    f:relationship "implementedBy" ;
+    f:review "unreviewed" ;
+    f:scenario e:D ;
+    f:supportedElement "before_contract",
+        "classification" ;
+    f:to e:D-ProcedureStep .
+
+e:D-M3 a f:MappingAssertion ;
+    f:conflictingElement "before_contract" ;
+    f:evidence e:D-Control-passage,
+        e:D-ProcedureStep-passage ;
+    f:from e:D-ProcedureStep ;
+    f:rationale "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity." ;
+    f:relationship "supportedBy" ;
+    f:review "unreviewed" ;
+    f:scenario e:D ;
+    f:supportedElement "classification" ;
+    f:to e:D-Control .
+
+e:DORA-OJ-2022 a f:SourceDocumentVersion ;
+    f:url "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng" ;
+    f:version "Original OJ 2022" .
+
+e:A-Control a f:Control ;
+    f:evidence e:A-Control-passage ;
+    f:review "unreviewed" ;
+    f:synthetic true .
+
+e:A-Control-passage a f:SourcePassage ;
+    f:locator "Control §1" ;
+    f:source e:A-BANK-v1 ;
+    f:text "Before signature, the approver checks that the critical-or-important-function classification is completed; missing classification blocks signature." .
+
+e:B-Control a f:Control ;
+    f:evidence e:B-Control-passage ;
+    f:review "unreviewed" ;
+    f:synthetic true .
+
+e:B-Control-passage a f:SourcePassage ;
+    f:locator "Control §1" ;
+    f:source e:B-BANK-v1 ;
+    f:text "The reviewer checks that a critical-or-important-function classification is present." .
+
+e:C a f:Scenario ;
+    f:hasNode e:C-PolicyRequirement,
+        e:C-ProcedureStep,
+        e:O-01 ;
+    f:scope "Synthetic EU ICT arrangement; applies for demonstration only" .
+
+e:C-BANK-v1 a f:SourceDocumentVersion ;
+    f:version "synthetic-v1" .
+
+e:C-ProcedureStep a f:ProcedureStep ;
+    f:evidence e:C-ProcedureStep-passage ;
+    f:review "unreviewed" ;
+    f:synthetic true .
+
+e:C-ProcedureStep-passage a f:SourcePassage ;
+    f:locator "ProcedureStep §1" ;
+    f:source e:C-BANK-v1 ;
+    f:text "The service owner completes the critical-or-important-function classification and submits it before contract signature." .
+
+e:D-Control a f:Control ;
+    f:evidence e:D-Control-passage ;
+    f:review "unreviewed" ;
+    f:synthetic true .
+
+e:D-Control-passage a f:SourcePassage ;
+    f:locator "Control §1" ;
+    f:source e:D-BANK-v1 ;
+    f:text "The classification check is performed only after contract signature; there is no pre-signature check." .
+
+e:A a f:Scenario ;
+    f:hasNode e:A-Control,
+        e:A-PolicyRequirement,
+        e:A-ProcedureStep,
+        e:O-01 ;
+    f:scope "Synthetic EU ICT arrangement; applies for demonstration only" .
+
+e:A-BANK-v1 a f:SourceDocumentVersion ;
+    f:version "synthetic-v1" .
+
+e:A-PolicyRequirement a f:PolicyRequirement ;
+    f:evidence e:A-PolicyRequirement-passage ;
+    f:review "unreviewed" ;
+    f:synthetic true .
+
+e:A-PolicyRequirement-passage a f:SourcePassage ;
+    f:locator "PolicyRequirement §1" ;
+    f:source e:A-BANK-v1 ;
+    f:text "Before signing any ICT service contract, classify whether the service supports a critical or important function." .
+
+e:A-ProcedureStep a f:ProcedureStep ;
+    f:evidence e:A-ProcedureStep-passage ;
+    f:review "unreviewed" ;
+    f:synthetic true .
+
+e:A-ProcedureStep-passage a f:SourcePassage ;
+    f:locator "ProcedureStep §1" ;
+    f:source e:A-BANK-v1 ;
+    f:text "The service owner completes the critical-or-important-function classification and submits it before contract signature." .
+
+e:B a f:Scenario ;
+    f:hasNode e:B-Control,
+        e:B-PolicyRequirement,
+        e:B-ProcedureStep,
+        e:O-01 ;
+    f:scope "Synthetic EU ICT arrangement; applies for demonstration only" .
+
+e:B-BANK-v1 a f:SourceDocumentVersion ;
+    f:version "synthetic-v1" .
+
+e:B-PolicyRequirement a f:PolicyRequirement ;
+    f:evidence e:B-PolicyRequirement-passage ;
+    f:review "unreviewed" ;
+    f:synthetic true .
+
+e:B-PolicyRequirement-passage a f:SourcePassage ;
+    f:locator "PolicyRequirement §1" ;
+    f:source e:B-BANK-v1 ;
+    f:text "Before signing any ICT service contract, classify whether the service supports a critical or important function." .
+
+e:B-ProcedureStep a f:ProcedureStep ;
+    f:evidence e:B-ProcedureStep-passage ;
+    f:review "unreviewed" ;
+    f:synthetic true .
+
+e:B-ProcedureStep-passage a f:SourcePassage ;
+    f:locator "ProcedureStep §1" ;
+    f:source e:B-BANK-v1 ;
+    f:text "The service owner completes the critical-or-important-function classification and submits it before contract signature." .
+
+e:C-PolicyRequirement a f:PolicyRequirement ;
+    f:evidence e:C-PolicyRequirement-passage ;
+    f:review "unreviewed" ;
+    f:synthetic true .
+
+e:C-PolicyRequirement-passage a f:SourcePassage ;
+    f:locator "PolicyRequirement §1" ;
+    f:source e:C-BANK-v1 ;
+    f:text "Before signing any ICT service contract, classify whether the service supports a critical or important function." .
+
+e:D a f:Scenario ;
+    f:hasNode e:D-Control,
+        e:D-PolicyRequirement,
+        e:D-ProcedureStep,
+        e:O-01 ;
+    f:scope "Synthetic EU ICT arrangement; applies for demonstration only" .
+
+e:D-BANK-v1 a f:SourceDocumentVersion ;
+    f:version "synthetic-v1" .
+
+e:D-PolicyRequirement a f:PolicyRequirement ;
+    f:evidence e:D-PolicyRequirement-passage ;
+    f:review "unreviewed" ;
+    f:synthetic true .
+
+e:D-PolicyRequirement-passage a f:SourcePassage ;
+    f:locator "PolicyRequirement §1" ;
+    f:source e:D-BANK-v1 ;
+    f:text "Before signing any ICT service contract, classify whether the service supports a critical or important function." .
+
+e:D-ProcedureStep a f:ProcedureStep ;
+    f:evidence e:D-ProcedureStep-passage ;
+    f:review "unreviewed" ;
+    f:synthetic true .
+
+e:D-ProcedureStep-passage a f:SourcePassage ;
+    f:locator "ProcedureStep §1" ;
+    f:source e:D-BANK-v1 ;
+    f:text "The service owner completes the critical-or-important-function classification and submits it before contract signature." .
+
+e:O-01-passage a f:SourcePassage ;
+    f:locator "Article 28(4)(a) + introductory sentence" ;
+    f:source e:DORA-OJ-2022 ;
+    f:text "assess whether the contractual arrangement covers the use of ICT services supporting a critical or important function;" .
+
+e:O-01 a f:RegulatoryObligation ;
+    f:bankInterpretation "SYNTHETIC DRAFT: the service owner records classification and obtains a pre-signature check. These roles and approvals are bank design choices, not quoted regulatory requirements." ;
+    f:evidence e:O-01-passage ;
+    f:plainEnglish "Before contracting for ICT services, assess whether they support a critical or important function." ;
+    f:review "unreviewed" ;
+    f:synthetic false .
+

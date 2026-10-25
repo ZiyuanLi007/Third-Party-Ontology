@@ -1,0 +1,211 @@
+[
+  {
+    "id": "A-M1",
+    "case": "A",
+    "from": "O-01",
+    "to": "A-PolicyRequirement",
+    "relationship": "addressedBy",
+    "evidence": [
+      "O-01",
+      "A-PolicyRequirement"
+    ],
+    "rationale": "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity.",
+    "supported_elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicting_elements": [],
+    "review": "unreviewed",
+    "origin": "curated_demo_fixture"
+  },
+  {
+    "id": "A-M2",
+    "case": "A",
+    "from": "A-PolicyRequirement",
+    "to": "A-ProcedureStep",
+    "relationship": "implementedBy",
+    "evidence": [
+      "A-PolicyRequirement",
+      "A-ProcedureStep"
+    ],
+    "rationale": "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity.",
+    "supported_elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicting_elements": [],
+    "review": "unreviewed",
+    "origin": "curated_demo_fixture"
+  },
+  {
+    "id": "A-M3",
+    "case": "A",
+    "from": "A-ProcedureStep",
+    "to": "A-Control",
+    "relationship": "supportedBy",
+    "evidence": [
+      "A-ProcedureStep",
+      "A-Control"
+    ],
+    "rationale": "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity.",
+    "supported_elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicting_elements": [],
+    "review": "unreviewed",
+    "origin": "curated_demo_fixture"
+  },
+  {
+    "id": "B-M1",
+    "case": "B",
+    "from": "O-01",
+    "to": "B-PolicyRequirement",
+    "relationship": "addressedBy",
+    "evidence": [
+      "O-01",
+      "B-PolicyRequirement"
+    ],
+    "rationale": "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity.",
+    "supported_elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicting_elements": [],
+    "review": "unreviewed",
+    "origin": "curated_demo_fixture"
+  },
+  {
+    "id": "B-M2",
+    "case": "B",
+    "from": "B-PolicyRequirement",
+    "to": "B-ProcedureStep",
+    "relationship": "implementedBy",
+    "evidence": [
+      "B-PolicyRequirement",
+      "B-ProcedureStep"
+    ],
+    "rationale": "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity.",
+    "supported_elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicting_elements": [],
+    "review": "unreviewed",
+    "origin": "curated_demo_fixture"
+  },
+  {
+    "id": "B-M3",
+    "case": "B",
+    "from": "B-ProcedureStep",
+    "to": "B-Control",
+    "relationship": "supportedBy",
+    "evidence": [
+      "B-ProcedureStep",
+      "B-Control"
+    ],
+    "rationale": "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity.",
+    "supported_elements": [
+      "classification"
+    ],
+    "conflicting_elements": [],
+    "review": "unreviewed",
+    "origin": "curated_demo_fixture"
+  },
+  {
+    "id": "C-M1",
+    "case": "C",
+    "from": "O-01",
+    "to": "C-PolicyRequirement",
+    "relationship": "addressedBy",
+    "evidence": [
+      "O-01",
+      "C-PolicyRequirement"
+    ],
+    "rationale": "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity.",
+    "supported_elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicting_elements": [],
+    "review": "unreviewed",
+    "origin": "curated_demo_fixture"
+  },
+  {
+    "id": "C-M2",
+    "case": "C",
+    "from": "C-PolicyRequirement",
+    "to": "C-ProcedureStep",
+    "relationship": "implementedBy",
+    "evidence": [
+      "C-PolicyRequirement",
+      "C-ProcedureStep"
+    ],
+    "rationale": "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity.",
+    "supported_elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicting_elements": [],
+    "review": "unreviewed",
+    "origin": "curated_demo_fixture"
+  },
+  {
+    "id": "D-M1",
+    "case": "D",
+    "from": "O-01",
+    "to": "D-PolicyRequirement",
+    "relationship": "addressedBy",
+    "evidence": [
+      "O-01",
+      "D-PolicyRequirement"
+    ],
+    "rationale": "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity.",
+    "supported_elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicting_elements": [],
+    "review": "unreviewed",
+    "origin": "curated_demo_fixture"
+  },
+  {
+    "id": "D-M2",
+    "case": "D",
+    "from": "D-PolicyRequirement",
+    "to": "D-ProcedureStep",
+    "relationship": "implementedBy",
+    "evidence": [
+      "D-PolicyRequirement",
+      "D-ProcedureStep"
+    ],
+    "rationale": "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity.",
+    "supported_elements": [
+      "classification",
+      "before_contract"
+    ],
+    "conflicting_elements": [],
+    "review": "unreviewed",
+    "origin": "curated_demo_fixture"
+  },
+  {
+    "id": "D-M3",
+    "case": "D",
+    "from": "D-ProcedureStep",
+    "to": "D-Control",
+    "relationship": "supportedBy",
+    "evidence": [
+      "D-ProcedureStep",
+      "D-Control"
+    ],
+    "rationale": "Target explicitly addresses classification. Timing is assessed separately from the text, not inferred from topic similarity.",
+    "supported_elements": [
+      "classification"
+    ],
+    "conflicting_elements": [
+      "before_contract"
+    ],
+    "review": "unreviewed",
+    "origin": "curated_demo_fixture"
+  }
+]

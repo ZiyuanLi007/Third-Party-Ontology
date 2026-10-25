@@ -1,0 +1,73 @@
+[
+  {
+    "id": "A",
+    "title": "Complete documentary support",
+    "obligation": "O-01",
+    "required": [
+      "classification",
+      "before_contract"
+    ],
+    "node_ids": [
+      "O-01",
+      "A-PolicyRequirement",
+      "A-ProcedureStep",
+      "A-Control"
+    ],
+    "control_material_supplied": true,
+    "scope": "Synthetic EU ICT arrangement; applies for demonstration only",
+    "expected": "DOCUMENTARY_SUPPORT"
+  },
+  {
+    "id": "B",
+    "title": "Partial support",
+    "obligation": "O-01",
+    "required": [
+      "classification",
+      "before_contract"
+    ],
+    "node_ids": [
+      "O-01",
+      "B-PolicyRequirement",
+      "B-ProcedureStep",
+      "B-Control"
+    ],
+    "control_material_supplied": true,
+    "scope": "Synthetic EU ICT arrangement; applies for demonstration only",
+    "expected": "PARTIAL_SUPPORT"
+  },
+  {
+    "id": "C",
+    "title": "Control material not supplied",
+    "obligation": "O-01",
+    "required": [
+      "classification",
+      "before_contract"
+    ],
+    "node_ids": [
+      "O-01",
+      "C-PolicyRequirement",
+      "C-ProcedureStep"
+    ],
+    "control_material_supplied": false,
+    "scope": "Synthetic EU ICT arrangement; applies for demonstration only",
+    "expected": "MATERIAL_MISSING"
+  },
+  {
+    "id": "D",
+    "title": "Contradictory timing",
+    "obligation": "O-01",
+    "required": [
+      "classification",
+      "before_contract"
+    ],
+    "node_ids": [
+      "O-01",
+      "D-PolicyRequirement",
+      "D-ProcedureStep",
+      "D-Control"
+    ],
+    "control_material_supplied": true,
+    "scope": "Synthetic EU ICT arrangement; applies for demonstration only",
+    "expected": "CONFLICT"
+  }
+]

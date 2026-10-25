@@ -1,0 +1,17 @@
+{
+  "id": "DORA-OJ-2022",
+  "title": "Regulation (EU) 2022/2554",
+  "version": "Original Official Journal text, 27 December 2022; not a consolidated-current-law claim",
+  "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
+  "retrieved": "2026-10-25",
+  "selection": "Article 28(4)(a)",
+  "excerpt": "assess whether the contractual arrangement covers the use of ICT services supporting a critical or important function;",
+  "context_paraphrase": "Article 28(4) requires financial entities to make the listed assessments before entering an ICT services contractual arrangement.",
+  "context_locator": "Article 28(4), introductory sentence",
+  "dependencies": [
+    "Article 2: scope",
+    "Article 3(22): critical or important function definition",
+    "Article 28(1): proportionality context"
+  ],
+  "limitations": "Selected excerpt only; dependency references retained but not ingested. SME must confirm scope and interpretation before real use. ICT third-party arrangements are not identical to all outsourcing."
+}

@@ -1,0 +1,13 @@
+@prefix f: <https://example.org/tpr/foundation#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+f:MappingShape a sh:NodeShape ; sh:targetClass f:MappingAssertion ;
+ sh:property [ sh:path f:from ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+ sh:property [ sh:path f:to ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;
+ sh:property [ sh:path f:evidence ; sh:minCount 2 ; sh:class f:SourcePassage ] ;
+ sh:property [ sh:path f:rationale ; sh:minCount 1 ; sh:datatype xsd:string ] ;
+ sh:property [ sh:path f:review ; sh:minCount 1 ; sh:in ("unreviewed" "confirmed" "rejected") ] .
+f:PassageShape a sh:NodeShape ; sh:targetClass f:SourcePassage ;
+ sh:property [ sh:path f:text ; sh:minCount 1 ] ;
+ sh:property [ sh:path f:locator ; sh:minCount 1 ] ;
+ sh:property [ sh:path f:source ; sh:minCount 1 ; sh:class f:SourceDocumentVersion ] .

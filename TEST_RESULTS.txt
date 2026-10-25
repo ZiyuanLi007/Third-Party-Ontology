@@ -1,0 +1,18 @@
+test_roundtrip_and_session_guard (test_app.HttpTests.test_roundtrip_and_session_guard) ... ok
+test_absent_material_overrides_model (test_app.WorkbenchTests.test_absent_material_overrides_model) ... ok
+test_demo_modes (test_app.WorkbenchTests.test_demo_modes) ... ok
+test_extraction_hallucination (test_app.WorkbenchTests.test_extraction_hallucination) ... ok
+test_fabricated_citation_rejected (test_app.WorkbenchTests.test_fabricated_citation_rejected) ... ok
+test_model_citations_valid (test_app.WorkbenchTests.test_model_citations_valid) ... ok
+test_no_control_material (test_app.WorkbenchTests.test_no_control_material) ... ok
+test_ontology (test_app.WorkbenchTests.test_ontology) ... ok
+test_parse_exact (test_app.WorkbenchTests.test_parse_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.542s
+
+OK
+
+JavaScript syntax: node --check passed.
+Browser visual QA: unavailable (managed preview lacks Python).
+Live LLM: not tested; mock and citation validation tested.
