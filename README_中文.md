@@ -51,3 +51,6 @@ parse_file() → Document Intelligence；retrieve() → Group AI Platform RAG；
 ## 测试
 `python -m unittest -v test_app.py`
 已验证 mock 模型协议、伪造引用拦截、缺材料判定、结构化引用和 TTL 解析。未使用真实模型 Key，因此真实模型服务的网络、配额和输出质量需在你的环境通过“测试连接”核实。当前托管预览环境没有可用 Python 后端运行时，浏览器视觉验收未完成；本地 HTTP 接口和 JavaScript 语法单独检查。
+
+## 真实样本测试与 TPR 视图
+参见 [REAL_SAMPLE_GUIDE.md](REAL_SAMPLE_GUIDE.md)。TPR 页现为四种预置实例场景，导出实例 TTL；Foundation 页为通用类型定义。上传材料尚不自动进入预置图。

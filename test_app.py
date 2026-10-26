@@ -26,6 +26,12 @@ class WorkbenchTests(unittest.TestCase):
    with self.assertRaises(ValueError):app.process(self.docs[1],'model')
  def test_demo_modes(self):
   self.assertEqual([app.demo(c)['layers'][-1]['status'] for c in 'ABCD'],['supported','partial','material_missing','conflict'])
+ def test_tpr_fixtures_differ_from_schema(self):
+  nodes=json.loads((app.ROOT/'reference/data/nodes.json').read_text()); cases=json.loads((app.ROOT/'reference/data/cases.json').read_text()); mappings=json.loads((app.ROOT/'reference/data/mappings.json').read_text())
+  ids={n['id'] for n in nodes}; self.assertIn('A-Control',ids); self.assertNotIn('C-Control',ids)
+  for c in cases:
+   self.assertTrue(set(c['node_ids'])<=ids)
+   self.assertEqual(len([m for m in mappings if m['case']==c['id']]),len(c['node_ids'])-1)
  def test_ontology(self):
   x=app.ontology((app.ROOT/'reference/ontology/foundation.ttl').read_text());self.assertIn('https://example.org/tpr/foundation#Control',x['classes'])
 class HttpTests(unittest.TestCase):
@@ -38,6 +44,7 @@ class HttpTests(unittest.TestCase):
   old=copy.deepcopy(app.STATE)
   try:
    with tempfile.TemporaryDirectory() as tmp, patch('app.DATA',Path(tmp)):
+    tpr=json.load(urllib.request.urlopen(base+'/api/tpr'));self.assertEqual(len(tpr['cases']),4);self.assertIn('A-Control',tpr['ttl'])
     state=json.load(urllib.request.urlopen(base+'/api/state'));self.assertNotIn('api_key',state['config'])
     def post(path,data,token=True):
      headers={'Content-Type':'application/json'}

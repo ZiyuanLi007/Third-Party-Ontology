@@ -147,6 +147,8 @@ class Handler(BaseHTTPRequestHandler):
         path=self.path.split('?')[0]
         if path=='/api/state':
             self.reply({**STATE,'token':TOKEN,'configured':bool(CONFIG['endpoint'] and CONFIG['model']),'config':{k:v for k,v in CONFIG.items() if k!='api_key'}});return
+        if path=='/api/tpr':
+            self.reply({name:json.loads((ROOT/('reference/data/'+name+'.json')).read_text()) for name in ['nodes','cases','mappings']} | {'ttl':(ROOT/'reference/data/instances.ttl').read_text()});return
         if path=='/api/ontology':self.reply(ontology((ROOT/'reference/ontology/foundation.ttl').read_text()));return
         routes={'/':'index.html','/style.css':'style.css','/main.js':'main.js'}
         if path not in routes:self.reply({'error':'Not found'},404);return
